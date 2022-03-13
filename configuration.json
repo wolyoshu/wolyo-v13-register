@@ -1,0 +1,16 @@
+{
+  "Bot": {
+    "token":"",
+    "owner":"",
+    "mongo":""
+  },
+  "Register": {
+    "erkek":"",
+    "kiz":"",
+    "kayitsiz":"",
+    "tagli":"",
+    "registerian":"",
+    "serverTag":"",
+    "serverUntag":""
+  }
+}
