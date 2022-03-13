@@ -1,6 +1,6 @@
 const { MessageButton, MessageActionRow } = require('discord.js');
 const isimler = require('../../../src/models/isimler')
-const cfg = require('../../../this')
+const cfg = require('../../../configuration')
 
 module.exports.run = async (client, message, args, embed) => {
   if(!message.member.roles.cache.has(client.conf.Register.registerian)) return message.channel.send({ embeds:[ embed.setDescription(`Bunun için yeterli yetkin bulunmamakta.`)]});
