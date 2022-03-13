@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js')
+const client = global.client;
 exports.execute = async message => {
 if(!message.content.startsWith("!") || !message.guild || message.author.bot) return;
   const args = message.content.slice(1).trim().split(/ +/g);
