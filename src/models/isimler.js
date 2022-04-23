@@ -5,4 +5,4 @@ const schema = Schema({
   guildID: { type: String, default: 0 },
   names: { type: Array, default: [] }
 })
-module.exports = model("", schema)
+module.exports = model("isimler", schema)
