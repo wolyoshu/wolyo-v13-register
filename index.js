@@ -7,7 +7,7 @@ require('./src/client/handlers/functions.js')
 
 
 
-client.login("").then(() => console.log(`Bot aktif --- ${client.user.tag}`)).catch(err => console.log("Bot giriş yapamıyor: "+ err))
+client.login(client.conf.Bot.token).then(() => console.log(`Bot aktif --- ${client.user.tag}`)).catch(err => console.log("Bot giriş yapamıyor: "+ err))
 
 client.commands = new Collection();
 client.aliases = new Collection();
@@ -22,7 +22,7 @@ if(!props.cfg) return
     client.commands.set(props.cfg.cmd, props)
     console.log(`Komut yüklendi: ${props.cfg.cmd}`)
     props.cfg.aliases.forEach(x => {
-      client.aliases.set(x, props)
+      client.aliases.set(x, props.cfg.cmd)
     })
   })
 })
